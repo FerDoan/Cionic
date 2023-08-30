@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-list slot="start">
+  <ion-item *ngFor='let item of items' [routerLink]="item.redirectTo" detail>
+    <ion-icon slot="start" [name]="item.icon"></ion-icon>
+    {{item.name}}
+  </ion-item>
+</ion-list>
+<!-- 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Componentes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+<!-- <ion-content>
+  <ion-button routerLink="/alert">
+    Click
+  </ion-button>
+  <ion-button routerLink="/action-sheet">
+    Click
+  </ion-button>
+</ion-content> -->
+
