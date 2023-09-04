@@ -8,5 +8,8 @@
         ></ion-back-button>
     </ion-buttons>
     <ion-title class="ion-title">{{ title }}</ion-title>
+    <div *ngIf="img != ''" slot="end">
+      <ion-img  [src]="img" class="img-a" slot="end"></ion-img>
+    </div>
   </ion-toolbar>
 </ion-header>

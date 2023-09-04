@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent{
 
   @Input() title: string = "";
+  @Input() img: string = "";
   constructor() { }
 
 }
